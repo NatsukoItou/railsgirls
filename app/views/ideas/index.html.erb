@@ -2,13 +2,19 @@
 
 <h1>Ideas</h1>
 
-<div id="ideas">
-  <% @ideas.each do |idea| %>
-    <%= render idea %>
-    <p>
-      <%= link_to "Show this idea", idea %>
-    </p>
-  <% end %>
-</div>
+
+<% @ideas.each do |idea| %>
+  <div id="ideas" class="card">
+  <div class="card-body">
+  <%= render idea %>
+  <p>
+    <%= link_to "Show this idea", idea %>
+  </p>
+  </div>
+  </div>
+<% end %>
+
+ 
+
 
 <%= link_to "New idea", new_idea_path %>

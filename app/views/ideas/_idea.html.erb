@@ -11,7 +11,9 @@
 
   <p>
     <strong>Picture:</strong>
-    <%= image_tag(idea.picture_url, width: 600) if idea.picture? %>
+  </p>
+  <p>
+    <%= image_tag(idea.picture_url, width: 300, class: "hghg") if idea.picture? %>
   </p>
 
 </div>
